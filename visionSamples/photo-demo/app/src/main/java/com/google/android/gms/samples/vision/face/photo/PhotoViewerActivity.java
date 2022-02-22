@@ -82,7 +82,7 @@ public class PhotoViewerActivity extends Activity {
             // available.  The detector will automatically become operational once the library
             // download completes on device.
             Log.w(TAG, "Face detector dependencies are not yet available.");
-
+             Toast.makeText(PhotoViewerActivity.this,"Face detector dependencies are not yet available",Toast.LENGTH_LONG).show();
             // Check for low storage.  If there is low storage, the native library will not be
             // downloaded, so detection will not become operational.
             IntentFilter lowstorageFilter = new IntentFilter(Intent.ACTION_DEVICE_STORAGE_LOW);
